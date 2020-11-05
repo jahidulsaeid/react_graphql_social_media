@@ -6,3 +6,5 @@ module.exports = {
 }
 
 ```
+
+Time: 45Min
