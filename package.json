@@ -1,0 +1,29 @@
+{
+  "name": "react_graphql_social_media",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jahidulsaeid/react_graphql_social_media.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jahidulsaeid/react_graphql_social_media/issues"
+  },
+  "homepage": "https://github.com/jahidulsaeid/react_graphql_social_media#readme",
+  "dependencies": {
+    "apollo-server": "^2.19.0",
+    "graphql": "^15.4.0",
+    "mongoose": "^5.10.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
