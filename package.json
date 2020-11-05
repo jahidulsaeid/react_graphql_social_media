@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index"
-    
   },
   "repository": {
     "type": "git",
@@ -20,7 +19,9 @@
   "homepage": "https://github.com/jahidulsaeid/react_graphql_social_media#readme",
   "dependencies": {
     "apollo-server": "^2.19.0",
+    "bcryptjs": "^2.4.3",
     "graphql": "^15.4.0",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.10.12"
   },
   "devDependencies": {
