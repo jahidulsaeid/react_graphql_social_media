@@ -10,7 +10,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
 function generateToken(user) {
-  jwt.sign(
+  return jwt.sign(
     {
       id: user.id,
       email: user.email,
@@ -25,7 +25,7 @@ module.exports = {
   Mutation: {
     async login(_, { username, password }) {
       const { errors, valid } = validateLoginInput(username, password);
-      if (!valid){
+      if (!valid) {
         throw new UserInputError("Errors", { errors });
       }
       const user = await User.findOne({ username });
@@ -40,7 +40,6 @@ module.exports = {
       }
       const token = generateToken(user);
       return {
-        
         ...user._doc,
         id: user._id,
         token,
@@ -48,9 +47,7 @@ module.exports = {
     },
     async register(
       _,
-      { registerInput: { username, email, password, confirmPassword } },
-      context,
-      info
+      { registerInput: { username, email, password, confirmPassword } }
     ) {
       //TODO: Validation user data
       const { valid, errors } = validateRegisterInput(
