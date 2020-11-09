@@ -8,7 +8,4 @@ module.exports = {
 ```
 
 
-<!-- Authentication middleware & Create/Delete Post -->
-
-
-<!-- Time: 1h 31min 20s -->
+<!-- Time: 1h 35min -->
